@@ -251,6 +251,16 @@ git push -u origin master = 입력
 
 
 
+Git hub에 Push 하기
+
+git remote -v (길 확인)
+
+git remote add origin github 주소
+
+git push -u origin master
+
+
+
 
 
 
