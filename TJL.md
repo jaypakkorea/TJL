@@ -261,6 +261,10 @@ git push -u origin master
 
 
 
+Git hub 에서 Clone 하기
+
+git clone [저장 주소] [로컬에 복제할 위치]
+
 
 
 
