@@ -259,6 +259,8 @@ git remote add origin github 주소
 
 git push -u origin master
 
+git remote remove origin : remote 를 재설정 할 때 지우는 방법
+
 
 
 Git hub 에서 Clone 하기
