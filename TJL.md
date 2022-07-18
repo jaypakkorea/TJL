@@ -326,7 +326,9 @@ print (f"오늘은 {today:%y}년 {today:%m}월 {today:%d}일")
 
 
 
-![캡처](C:\Users\user\Desktop\캡처.JPG)
+![캡처](C:\TJL\TJL.assets\캡처1.JPG)
+
+
 
 
 
@@ -341,8 +343,55 @@ print(box[-1][1][0]) #b
 print(type(box[-1][1][0])) # class 'str'
 
 # [2:4] 와 같은 표현을 '슬라이싱' 이라고 하며, list, tuple, range ,str 다 사용 가능하다
-# [::-1] 은 [start:end:step] 에서 step 만 역으로 주겠다는 논리!!!
+# [::-1] 은 [start:end:step] 에서 [-1:-len()+1:-1]로 역으로 주겠다는 논리!!!
 ```
+
+
+
+- set
+
+중복값이 제거되기때문에, 고유값의 개수를 구할 때 좋음
+
+```python
+a = {'서울', '서울', '부산', '부산', '울산', '대구'}
+print(len(set(a)) #4
+      
+      
+      
+b = {1, 2, 4, 5}
+c = {2, 3, 5, 6}
+print(set(b) | set(c)) #{1,2,3,4,5,6}
+print(set(b) & set(c)) #{2,5}
+print(set(b) - set(c)) #{3,6}
+```
+
+
+
+- Dictionary
+
+```python
+score = {'web' : 90 , 'python' : 80 , 'Django' : 70}
+
+score['algorithm'] = 90
+score.update({'python' : 95})
+```
+
+
+
+- Typecasting
+
+
+
+```python
+a = '3'
+A = 3
+
+a = A  #False
+int(a) = A #True
+a = str(A) #True
+```
+
+
 
 
 
