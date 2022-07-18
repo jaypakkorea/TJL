@@ -277,6 +277,77 @@ git clone [저장 주소] [로컬에 복제할 위치]
 
 
 
+- 파이썬
+
+​		인터프리터 언어 _ 한 줄씩 번역
+
+​		객체 지향 프로그래밍 
+
+- 작성 팁
+
+​		`alt` + 클릭 : 한 번에 복수의 문장 작성
+
+- 변수
+
+​		데이터 정보를 담는 상자
+
+- 연산자
+
+​		**/** 나눗셈    **//** 몫    **%** 나머지 
+
+- 진수
+
+  print (**0b**10) **b**inary
+
+  print (**0o**10) **o**ctal
+
+  print (**0x**10) he**x**adecimal
+
+- string
+
+​		\n 줄 바꿈 ex) print ("오늘의 점심 메뉴는\n과연 뭘까요?")
+
+
+
+​		name = "Jay"
+
+​		print(**f**"hello {**name**}")
+
+```python
+import datetime
+
+today = datetime.datetime.now()
+print (f"오늘은 {today:%y}년 {today:%m}월 {today:%d}일")
+```
+
+
+
+- Boolean 형
+
+
+
+![캡처](C:\Users\user\Desktop\캡처.JPG)
+
+
+
+
+
+- list
+
+```python
+box = [1 , 2 , ['apple' , 'banna' , 'cherry']]
+
+print(box[-1][1][0]) #b
+print(type(box[-1][1][0])) # class 'str'
+
+# [2:4] 와 같은 표현을 '슬라이싱' 이라고 하며, list, tuple, range ,str 다 사용 가능하다
+# [::-1] 은 [start:end:step] 에서 step 만 역으로 주겠다는 논리!!!
+```
+
+
+
+
+
 ### 2_week
 
 -----
