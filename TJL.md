@@ -420,15 +420,163 @@ print(a+b)
 
 
 i = orders.split(',')
+menu_list = list(i)
+menu_set = list(set(i))
+menu_set.sort(reverse = True)
+print(menu_set)
+```
+
+
+
+- 삼항연산자
+
+```python
+num = int(input())
+
+print("짝수") if num % 2 == 0 else print("홀수")
+```
+
+- 딕셔너리 + for 반복문
+
+```python
+chars = { '서울' : '02' , '대전' : '042'}
+
+
+for char in chars :
+    print(char, chars[char])
+```
+
+- enumerate +  for 반복문
+
+```python
+members = ['영희' , '민수', '철수']
+print(list(enumerate(members ,#필요한경우index 시작번호))
+
+
+members = ['영희' , '민수', '철수']
+
+for idx, member in enumerate(members):
+    print(idx, member)
+```
+
+- list comprehension
+
+```python
+cublist = [number**3 for number in range(1,4)]
+print(cublist)
+```
+
+
+
+- dictionary comprehension
+
+```python
+cublist = {}
+for i in range(1,4) :
+    cublist[i] = i ** 3
+print(cublist)
+
+cublist = {i : i ** 3 for i in range(1,4)}
+print(cublist)
+```
+
+
+
+- 반복문 제어
+
+```
+for char in 'apple' :
+    if char == 'a' :
+        print("a!")
+        break
+
+else : 
+    print("b가 없습니다")
+```
+
+
+
+```python
+# 복수의 parameter를 받을 때 *args *rest를 사용
+
+a = 10
+b = 20
+def add (*args):
+    return a + b
+
+kick = add(a,b)
+print(kick) #tuple로 반환
+
+
+def funk(*rest) :
+    return  rest
+
+kick = funk(a, b, 6 , 10)
+
+print(kick) #tuple로 반환
+```
+
+
+
+- 가변 인자
+
+```
+def family(papa, mama, *geschwester) :
+    print(f"아버지 {papa}")
+    print(f"어머니 {mama}")
+    print(f"형제자매 목록")
+    for name in geschwester :
+        print(f"{name}")
+
+family('박문수' , '서은숙' , ' 박채리' , '박정호')
+```
+
+
+
+- 가변 키워드 인자
+
+```python
+def family(papa, mama, **geschwester) :
+    print("아버지 : ", papa)
+    print("어머니 : ", mama)
+    if geschwester :
+        for member, name in geschwester.items() :
+            print(f"{member} : {name}")
+
+family('박문수' , '서은숙' , 누나 = '박채리', 누나 = '박주언' , 나 = '박정호')
 ```
 
 
 
 
 
+- lambda
+
+```python
+def tri (b,h):
+    return b * h * 0.5
+print(tri(5,6))
 
 
->>>>>>> 70049840bfab0cb23343c57bbbdd650f5e1a0c6e
+tri = lambda b, h : 0.5 * b * h
+print(tri(5,6))
+
+```
+
+- 재귀함수 (factorial)
+
+```python
+def factorial (n):
+    if n == 0 or n == 1 :
+        return 1
+    else :
+        return n * factorial(n-1)
+    
+print(factorial(4))
+```
+
+
+
 ### 2_week
 
 -----
