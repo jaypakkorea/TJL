@@ -577,6 +577,89 @@ print(factorial(4))
 
 
 
+- join mothod
+
+```python
+numbers = [1, 2, 3]
+
+numbers = ''.join([str(i) for i in numbers])
+print(numbers)
+
+sky1 = ['a' , 'b', 'c']
+
+numbers = '*'.join([str(i) for i in sky1])
+print(numbers)
+
+
+```
+
+
+
+- lambda
+
+```python
+list(map(lambda n: n%2, [1, 2, 3]))
+```
+
+
+
+- 재귀함수 (factorial)
+
+```python
+def factorial(n):
+    if n == 0 or n == 1 :
+        return 1
+
+    else :
+
+        return n * factorial(n-1)
+
+print(factorial(5))
+```
+
+- list와  sort 로 최댓값 구하기
+
+```python
+def max (*a):
+    j = ''
+    for i in range(len(a)) :
+        j += str(a[i])
+    
+    a = list(j)
+    a.sort()
+    return a[-1]
+    
+print(max(1, 2, 3, 4))
+```
+
+
+
+- 예제
+
+```python
+numbers = [1,1,3,3,0,1,1]
+
+
+
+result = []
+for idx, items in enumerate(numbers) :
+    if idx == 0 :
+        result.append(numbers[idx])
+    elif result[-1] != items :
+        result.append(items)
+
+print(result)
+
+```
+
+
+
+
+
+
+
+
+
 ### 2_week
 
 -----
