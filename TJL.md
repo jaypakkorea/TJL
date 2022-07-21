@@ -654,6 +654,23 @@ print(result)
 
 
 
+- dictionary
+
+```python
+def dict_list_sum(a,b) :
+    i = a['age']
+    j = b['age']
+    return i + j
+
+
+a = {'name': 'kim', 'age': 12}
+b = {'name': 'lee', 'age': 4}
+
+print(dict_list_sum(a,b))
+```
+
+
+
 
 
 
